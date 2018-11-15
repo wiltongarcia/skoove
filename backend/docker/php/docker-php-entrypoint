@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+cd /app
+file="create.lock"
+if [ ! -f "$file" ]
+then
+    echo "1" > create.lock
+    cp .env.local .env
+fi
+
+exec "$@"

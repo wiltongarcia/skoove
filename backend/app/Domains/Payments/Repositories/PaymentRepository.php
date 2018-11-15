@@ -5,12 +5,16 @@ use App\Domains\Payments\Contracts\PaymentsRepository as PaymentsRepositoryContr
 use App\Domains\Payments\Payment;
 use Artesaos\Warehouse\AbstractCrudRepository;
 
+/**
+ * PaymentsRepository Class
+ *
+ * @package \App\Domains\Payments\Repositories
+ * @author Wilton Garcia <wiltonog@gmail.com>
+**/
 class PaymentsRepository extends AbstractCrudRepository implements PaymentsRepositoryContract
 {
-
     /**
-     * @var Payment
+     * @var \App\Domains\Payments\Payment
      */
     protected $modelClass = Payment::class;
-
 }

@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dea35422d76440a729997f8b523132bd",
+    "content-hash": "8fad6e4e4309abd1c35cf3b2b4b9114e",
     "packages": [
         {
             "name": "artesaos/warehouse",
-            "version": "3.0.0",
+            "version": "v2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artesaos/warehouse.git",
-                "reference": "8f09a43eb14b3105420b39188b79b3d41b0e768b"
+                "reference": "7f1b7db62038654ad41923d9439117a539ca8aef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artesaos/warehouse/zipball/8f09a43eb14b3105420b39188b79b3d41b0e768b",
-                "reference": "8f09a43eb14b3105420b39188b79b3d41b0e768b",
+                "url": "https://api.github.com/repos/artesaos/warehouse/zipball/7f1b7db62038654ad41923d9439117a539ca8aef",
+                "reference": "7f1b7db62038654ad41923d9439117a539ca8aef",
                 "shasum": ""
             },
             "require": {
@@ -25,12 +25,15 @@
                 "illuminate/database": "~5",
                 "illuminate/pagination": "~5",
                 "illuminate/support": "~5",
-                "league/fractal": "~0.14",
                 "php": ">=5.4.0"
             },
             "require-dev": {
                 "illuminate/container": "~5",
-                "illuminate/http": "~5"
+                "illuminate/http": "~5",
+                "league/fractal": "~0.13"
+            },
+            "suggest": {
+                "league/fractal": "Form json response use fractal (0.13+)"
             },
             "type": "library",
             "autoload": {
@@ -46,10 +49,6 @@
                 {
                     "name": "Vinicius Reis",
                     "email": "luiz.vinicius73@gmail.com"
-                },
-                {
-                    "name": "Diego Hernandes",
-                    "email": "diego@hernandev.com"
                 }
             ],
             "description": "Artesãos Warehouse V2 - A simple and direct approach to repositories!",
@@ -61,7 +60,7 @@
                 "repository",
                 "warehouse"
             ],
-            "time": "2016-09-16T05:52:31+00:00"
+            "time": "2016-08-12T14:09:42+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -799,70 +798,6 @@
                 "storage"
             ],
             "time": "2018-10-15T13:53:10+00:00"
-        },
-        {
-            "name": "league/fractal",
-            "version": "0.17.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/fractal.git",
-                "reference": "a0b350824f22fc2fdde2500ce9d6851a3f275b0e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/fractal/zipball/a0b350824f22fc2fdde2500ce9d6851a3f275b0e",
-                "reference": "a0b350824f22fc2fdde2500ce9d6851a3f275b0e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "doctrine/orm": "^2.5",
-                "illuminate/contracts": "~5.0",
-                "mockery/mockery": "~0.9",
-                "pagerfanta/pagerfanta": "~1.0.0",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~1.5",
-                "zendframework/zend-paginator": "~2.3"
-            },
-            "suggest": {
-                "illuminate/pagination": "The Illuminate Pagination component.",
-                "pagerfanta/pagerfanta": "Pagerfanta Paginator",
-                "zendframework/zend-paginator": "Zend Framework Paginator"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.13-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\Fractal\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Phil Sturgeon",
-                    "email": "me@philsturgeon.uk",
-                    "homepage": "http://philsturgeon.uk/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Handle the output of complex data structures ready for API output.",
-            "homepage": "http://fractal.thephpleague.com/",
-            "keywords": [
-                "api",
-                "json",
-                "league",
-                "rest"
-            ],
-            "time": "2017-06-12T11:04:56+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -4246,7 +4181,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "artesaos/warehouse": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

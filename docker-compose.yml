@@ -1,0 +1,13 @@
+version: '3'
+services:
+  percona:
+    image: percona:5.7
+    container_name: percona
+    restart: always
+    ports:
+        - 3316:3306
+    environment:
+      - MYSQL_DATABASE=skoove
+      - MYSQL_USER=skoove
+      - MYSQL_PASSWORD=AV1h022m31TPe8H
+      - MYSQL_ROOT_PASSWORD=kP1MwuSFR22LcVZ

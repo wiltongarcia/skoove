@@ -55,7 +55,7 @@ class PaymentsController extends Controller
             ], 400);
         } catch(\Exception $e) {
             return Response::json([
-                'message' => 'Internal Server Error'
+                'message' => $e->getMessage()
             ], 500);
         }
     }

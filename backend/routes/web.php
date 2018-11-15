@@ -12,3 +12,4 @@
 */
 
 Route::post('/payment', 'PaymentsController@create');
+Route::get('/statistics', 'StatisticsController@index');

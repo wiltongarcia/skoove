@@ -1,11 +1,14 @@
 version: '3'
 services:
   percona:
-    image: percona:5.7
+    image: percona:5.7.23
     container_name: percona
     restart: always
     ports:
         - 3316:3306
+    volumes:
+      - /var/log/mysql
+      - /var/lib/mysql
     environment:
       - MYSQL_DATABASE=skoove
       - MYSQL_USER=skoove
